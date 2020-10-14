@@ -3,6 +3,8 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include "soc.h"
+#include <netinet/in.h>
+#include <arpa/inet.h>	//inet_addr
 int main (int argc, char *argv[]) {
         int err;
         int cSocket;
