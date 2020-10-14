@@ -1,6 +1,6 @@
 CC = g++ -std=c++11
 CFLAGS = -Wall -g -fsyntax-only -fpermissive
-all: socServer socClient
+all: serverC serverG client
 serverC:  serverC.c soc.h
 						$(CC) $(CFLAGS) -o socClient socClient.c
 serverG:  serverG.c soc.h
