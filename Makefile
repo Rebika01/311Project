@@ -1,14 +1,18 @@
-CC = g++ -std=c++11
-CFLAGS = -Wall -g -fsyntax-only -fpermissive
-all: serverC serverG client
-serverC:  serverC.c soc.h
-						$(CC) $(CFLAGS) -o serverC serverC.c soc.h
-serverG:  serverG.c soc.h
-						$(CC) $(CFLAGS) -o serverG serverG.c soc.h
-client:		client.c soc.h
-						$(CC) $(CFLAGS) -o client client.c soc.h
+#This is the makefile for Project 3
+CC = gcc
+CFLAGS = -g 
 
+all: Client Server Server2
+
+Client: client.c
+	$(CC) $(CFLAGS) client.c -o Client
+
+Server: serverC.c
+	$(CC) $(CFLAGS) serverC.c -o Server
+
+Server2: serverG.c
+	$(CC) $(CFLAGS) serverG.c -o Server2
 clean:
-	rm -f serverC
-	rm -f serverG
-	rm -f client
+	rm -f Client
+	rm -f Server
+	rm -f Server2
