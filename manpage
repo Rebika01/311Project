@@ -12,7 +12,7 @@ Client
 Client is a program that allows user to enter a number to input their choice of rock, paper, scissor to play with the server. The program uses internet type socket to do this.  
 
 .SH OPTIONS 
-The Client does not take any options. However, you can supply a number from 1,2 and 3 for your choice. 
+The Client does not take any options. However, you can supply a number from 0,1 and 2 for your choice. 0 is for Rock, 1 is for paper and 2 is for socket.   
  
 
 .SH CONDITIONS 
